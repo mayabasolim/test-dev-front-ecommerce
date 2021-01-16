@@ -1,10 +1,15 @@
 import "./App.css";
+import ImagesList from "./components/ImagesList";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <h1> My App</h1>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/albums" component={ImagesList} />
+        <Route path="/" component={ImagesList} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
