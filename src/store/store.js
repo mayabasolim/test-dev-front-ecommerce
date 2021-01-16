@@ -4,6 +4,7 @@ import rootReducer from "../reducers";
 const data = {
   imagesList: [],
   totalImages: 0,
+  cart: [],
 };
 
 export default function configureStore(initialState = data) {

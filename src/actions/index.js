@@ -11,3 +11,17 @@ export const setTotalImagesAction = (totalImages) => {
     totalImages,
   };
 };
+
+export const addInCartAction = (image) => {
+  return {
+    type: "ADD_IN_CART",
+    image,
+  };
+};
+
+export const removeInCartAction = (image) => {
+  return {
+    type: "REMOVE_IN_CART",
+    image,
+  };
+};

@@ -10,6 +10,19 @@ const AlbumsReducer = (state, action) => {
         ...state,
         totalImages: action.totalImages,
       };
+    case "ADD_IN_CART":
+      return {
+        ...state,
+        cart: state.cart.includes(action.image)
+          ? state.cart
+          : [...state.cart, action.image],
+      };
+
+    case "REMOVE_IN_CART":
+      return {
+        ...state,
+        cart: state.cart.filter((img) => img.id !== action.image.id),
+      };
     default:
       return state;
   }
