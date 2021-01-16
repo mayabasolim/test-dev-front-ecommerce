@@ -14,7 +14,7 @@ const Image = ({ image, isInCart }) => {
   );
 
   return (
-    <div className={`albumCard ${isInCart ? "isInCart" : ""}`}>
+    <div className={`imageCard ${isInCart ? "isInCart" : ""}`}>
       <img src={image.url} alt="Image" />
       <div className="imageInfos">
         <p> {image.title}</p>

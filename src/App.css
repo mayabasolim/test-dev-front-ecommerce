@@ -1,0 +1,177 @@
+.topbar_navbar {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  align-items: center;
+  height: 75px;
+  background: #fff;
+}
+
+.topbar_left {
+  padding-left: 32px;
+}
+
+.topbar_left img {
+  width: 135px;
+  height: 48px;
+}
+
+.topbar_center {
+  width: 100%;
+}
+
+.search {
+  width: 100%;
+  border-color: #b0cdfb;
+  border-radius: 10px;
+  height: 30px;
+}
+
+.topbar_right {
+  display: grid;
+  justify-items: end;
+  padding-right: 32px;
+}
+
+@media (max-width: 768px) {
+  .topbar_navbar {
+    height: 400px;
+    grid-template-rows: 50% auto;
+    grid-template-columns: 1fr;
+  }
+  .topbar_left {
+    background-color: #b0cdfb;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .topbar_center {
+    width: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .search {
+    height: 40px;
+  }
+
+  .topbar_right {
+    justify-items: center;
+    grid-row: 2;
+  }
+}
+
+.cartIcon {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+}
+.cartIcon:hover {
+  width: 60px;
+  height: 60px;
+}
+
+.imagesTable {
+  color: #fff;
+  background-color: #262624;
+  min-height: 29rem;
+  padding: 35px;
+}
+.imagesList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* .albumsList::after {
+  content: "";
+  flex: auto;
+} */
+
+.footer {
+  height: 200px;
+  padding: 32px 96px;
+  display: grid;
+  background-color: #262624;
+  grid-template-columns: 1fr 1fr;
+  color: #b0cdfb;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 16px 16px;
+  }
+}
+
+.footer_left img {
+  height: 48px;
+}
+.footer_right {
+  display: grid;
+}
+.footer_right p {
+  border-bottom: 1px #b0cdfb solid;
+}
+
+.imageCard {
+  height: 100px;
+  width: 300px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.imageCard img {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.imageCard .imageInfos {
+  font-size: 0.8em;
+  padding-left: 5px;
+  position: relative;
+}
+
+.imageCard .imageInfos .button {
+  position: absolute;
+  bottom: 0;
+}
+
+.imagesCart {
+  position: absolute;
+  width: 50%;
+  height: 70%;
+  background-color: #f8f9fa;
+  top: 73px;
+  right: 0;
+  margin-right: 32px;
+  overflow: scroll;
+  padding: 32px;
+  border: 1px solid #f8f9fa;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+  .imagesCart {
+    width: 80%;
+    top: 295px;
+  }
+}
+
+.imageCardCart {
+  width: 100%;
+}
+
+.pagination {
+  border-top: 1px solid #fff;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.isInCart {
+  opacity: 0.33;
+}

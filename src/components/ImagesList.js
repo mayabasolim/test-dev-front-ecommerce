@@ -86,18 +86,18 @@ const ImageList = () => {
             {imagesList.map((img) => (
               <Image key={img.id} image={img} isInCart={isInCart(img)} />
             ))}
-            {imagesList && imagesList.length > 0 && (
-              <Pagination
-                page={page}
-                limit={limit}
-                search={search}
-                reload={reload}
-              />
-            )}
-            {imagesList && imagesList.length === 0 && (
-              <p className="emptyList">Empty list</p>
-            )}
           </div>
+          {imagesList && imagesList.length > 0 && (
+            <Pagination
+              page={page}
+              limit={limit}
+              search={search}
+              reload={reload}
+            />
+          )}
+          {imagesList && imagesList.length === 0 && (
+            <p className="emptyList">Empty list</p>
+          )}
         </section>
         {isOpen && (
           <section className="imagesCart">
@@ -109,6 +109,26 @@ const ImageList = () => {
           </section>
         )}
       </main>
+
+      <footer className="footer">
+        <div className="footer_left">
+          <div>
+            <img src={Logo} alt="Logo" />
+          </div>
+          <span>
+            Blog <br />
+            About xxxxx
+            <br />
+            Help
+          </span>
+        </div>
+        <div className="footer_right">
+          <p>Practical links</p>
+          <a href="#">Conditions of Use</a>
+          <a href="#">Privacy Notice</a>
+          <a href="#"> Interest-Based Ads</a>
+        </div>
+      </footer>
     </div>
   );
 };
