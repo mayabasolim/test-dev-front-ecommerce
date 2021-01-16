@@ -4,3 +4,10 @@ export const setImagesListAction = (imagesList) => {
     imagesList,
   };
 };
+
+export const setTotalImagesAction = (totalImages) => {
+  return {
+    type: "SET_TOTAL_IMAGES",
+    totalImages,
+  };
+};

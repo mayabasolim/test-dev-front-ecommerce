@@ -5,6 +5,11 @@ const AlbumsReducer = (state, action) => {
         ...state,
         imagesList: action.imagesList,
       };
+    case "SET_TOTAL_IMAGES":
+      return {
+        ...state,
+        totalImages: action.totalImages,
+      };
     default:
       return state;
   }

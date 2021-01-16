@@ -3,6 +3,7 @@ import rootReducer from "../reducers";
 
 const data = {
   imagesList: [],
+  totalImages: 0,
 };
 
 export default function configureStore(initialState = data) {
